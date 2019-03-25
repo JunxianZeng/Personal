@@ -1,0 +1,19 @@
+Fn+F12进入浏览器开发者模式；
+
+在控制台（Console）中黏贴如下代码回车运行：
+
+ var s = document.createElement("script");
+    s.setAttribute("src","https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js");
+    s.onload = function(){
+    for(var i=0;i<100;i++){  
+    setTimeout(function(){
+    $('a[action-type="fl_menu"]')[0].click();
+    $('a[title="删除此条微博"]')[0].click();
+    $('a[action-type="ok"]')[0].click();
+    },1000*i);
+    }
+    }
+    document.head.appendChild(s);```
+   
+文中序号并不能准确定位所删相应位置的微博，请注意防止误删；
+ 该方法仅删除页面显示内容，故可以通过关键字查询后，然后删除。
