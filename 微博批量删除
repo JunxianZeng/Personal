@@ -13,7 +13,7 @@ Fn+F12进入浏览器开发者模式；
     },1000*i);
     }
     }
-    document.head.appendChild(s);```
+    document.head.appendChild(s);
    
 文中序号并不能准确定位所删相应位置的微博，请注意防止误删；
  该方法仅删除页面显示内容，故可以通过关键字查询后，然后删除。
